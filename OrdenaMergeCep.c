@@ -34,7 +34,7 @@ int main(int argc, char**argv)
 	fseek(file,0,SEEK_END);
 	posicao = ftell(file);
 	qtd = posicao/sizeof(Endereco); //faz o quantidade de registros no arquivo
-	parte1 = qtd/8; //está tratando se for um numero impar???
+	parte1 = qtd/8; 
 	end = (Endereco*) malloc(parte1*sizeof(Endereco));  // aloca o primeira parte do arquivo na memoria
 	rewind(file); //joga a cabeça de leitura para o inicio
 	printf("1 de 8\n");
